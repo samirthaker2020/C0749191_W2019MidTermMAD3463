@@ -1,5 +1,4 @@
 package com.lambton.magicalcardgame;
-
 public class MagicalCardGameCalculator {
 
     public String[][] getFirstShuffleResult(MagicalCardGameModel magicalCardGameModel) {
@@ -23,5 +22,4 @@ public class MagicalCardGameCalculator {
     public String getFinalResult(MagicalCardGameModel magicalCardGameModel) {
 
     }*/
-
 }

@@ -26,7 +26,6 @@ public class MagicalCardGameModel {
     public void setCardList(String [] [] cardList){
         this.cardList=cardList;
     }
-
     public String getSecShuffleColPos() {
         return secShuffleColPos;
     }
