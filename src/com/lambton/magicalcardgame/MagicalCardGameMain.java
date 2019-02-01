@@ -1,48 +1,25 @@
 package com.lambton.magicalcardgame;
 import java.util.*;
 public class MagicalCardGameMain {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter The Number Of Matrix Rows");
-
-        int matrixRow = scan.nextInt();
-
-        System.out.println("Enter The Number Of Matrix Columns");
-
-        int matrixCol = scan.nextInt();
-
-
-        int[][] matrix = new int[matrixRow][matrixCol];
-
-        enterMatrixData(scan, matrix, matrixRow, matrixCol);
-
-
-        printMatrix(matrix, matrixRow, matrixCol);
-    }
-    public static void enterMatrixData(Scanner scan, int[][] matrix, int matrixRow, int matrixCol){
-        System.out.println("Enter Matrix Data");
-
-        for (int i = 0; i < matrixRow; i++)
-        {
-            for (int j = 0; j < matrixCol; j++)
-            {
-                matrix[i][j] = scan.nextInt();
+    public static void main (String args[])
+    {
+        MagicalCardGameModel magicalCardGameModel = new MagicalCardGameModel();
+        System.out.println("Welcome to Magical Card Game ..");
+        String [][]cards = {{"1","A","5"},{"2","7","3"},{"3","6","K"}};
+        System.out.println("Please select one card from below");
+        for (int i=0;i<cards.length;i++){
+            for (int j=0;j<cards.length;j++){
+                System.out.print(cards[i][j]);
+                System.out.print(" , ");
             }
+            System.out.println(" ");
         }
-    }
 
-    public static void printMatrix(int[][] matrix, int matrixRow, int matrixCol){
-        System.out.println("Your Matrix is : ");
 
-        for (int i = 0; i < matrixRow; i++)
-        {
-            for (int j = 0; j < matrixCol; j++)
-            {
-                System.out.print(matrix[i][j]+"\t");
-            }
-
-            System.out.println();
-        }
+        magicalCardGameModel.setCardList(cards);
+        Scanner scanner = new Scanner(System. in);
+        String FirstShuffleColPos = scanner. nextLine();
+        magicalCardGameModel.setFirstShuffleColPos(FirstShuffleColPos);
     }
 }
