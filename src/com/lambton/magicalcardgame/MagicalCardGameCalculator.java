@@ -16,7 +16,6 @@ public class MagicalCardGameCalculator {
         }
         return cards1;
     }
-
    /* public String[][] getSecShuffleResult(MagicalCardGameModel magicalCardGameModel) {
 
     }
